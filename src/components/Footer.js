@@ -1,11 +1,12 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="w-full border-t border-white/5 bg-[#030712] py-8 mt-auto z-40 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <p className="text-slate-500 text-sm">
-          © {new Date().getFullYear()} Essayas Abraham. All rights reserved.
+          &copy; {new Date().getFullYear()} Essayas Abraham Hailu. All rights
+          reserved.
         </p>
 
         <div className="flex items-center justify-center space-x-4">
