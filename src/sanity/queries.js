@@ -19,3 +19,23 @@ export async function getAboutPageData() {
     }
   }`);
 }
+
+// Projects Page Queries
+export async function getProjectsPageData() {
+  return await client.fetch(`*[_type == "projectsPage"][0]{
+    introduction,
+    projects[]{
+      title,
+      description,
+      liveUrl,
+      githubUrl,
+      technologies,
+      image {
+        alt,
+        asset->{
+          url
+        }
+      }
+    }
+  }`);
+}
