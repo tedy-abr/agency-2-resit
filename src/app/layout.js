@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Essayas Abraham Hailu",
-  description: "Portfolio of Essayas Abraham",
+  description: "Portfolio of Essayas Abraham Hailu",
 };
 
 export default function RootLayout({ children }) {
