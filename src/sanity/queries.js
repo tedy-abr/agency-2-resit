@@ -39,3 +39,13 @@ export async function getProjectsPageData() {
     }
   }`);
 }
+
+// Contact Page Queries
+export async function getContactPageData() {
+  return await client.fetch(`*[_type == "contactPage"][0]{
+    introduction,
+    email,
+    location,
+    githubUrl
+  }`);
+}
